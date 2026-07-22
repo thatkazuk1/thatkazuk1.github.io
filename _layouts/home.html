@@ -1,13 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  {% include head.html %}
-</head>
-<body>
-  {% include navigation.html %}
-
-  <main id="home-content">
-    {{ content }}
-  </main>
-</body>
-</html>
+---
+layout: default
+---
+<section class="home">
+  <h1 class="home__wordmark">Desmond<br>Edem</h1>
+  <div class="home__tagline">Software Engineer</div>
+  <div class="home__links">
+    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
+    <span class="dot">&middot;</span>
+    <a href="https://www.linkedin.com/in/desmondedem" target="_blank" rel="noopener">LinkedIn</a>
+    <span class="dot">&middot;</span>
+    <a href="https://x.com/{{ site.twitter_username }}" target="_blank" rel="noopener">X</a>
+    <span class="dot">&middot;</span>
+    <a href="mailto:{{ site.email }}">Email</a>
+    <span class="dot">&middot;</span>
+    <a href="/assets/desmond_edem.pdf" target="_blank" rel="noopener">CV</a>
+  </div>
+</section>

@@ -4,3 +4,7 @@ _site
 .jekyll-metadata
 .org
 vendor
+
+.claude
+_design
+CLAUDE.md

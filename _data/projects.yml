@@ -1,0 +1,5 @@
+- name: Infra Stackdoc
+  year: "2026 — now"
+  desc: "Document visualize, and share your homelab stack."
+  stack: [TypeScript, React.js]
+  href: "https://github.com/thatkazuk1/infra-stackdoc"

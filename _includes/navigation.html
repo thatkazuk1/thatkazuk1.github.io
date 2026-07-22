@@ -1,17 +1,10 @@
-<div class="nav">
-  <input type="checkbox" id="menu-toggle" class="nav__toggle">
-
-  <label for="menu-toggle" class="nav__hamburger">
-    <span class="nav__hamburger-bar"></span>
-    <span class="nav__hamburger-bar"></span>
-    <span class="nav__hamburger-bar"></span>
-  </label>
-
-  <nav class="nav__panel">
-    <ul class="nav__list">
-      <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
-      <li class="nav__item"><a href="/thoughts/" class="nav__link">Thoughts</a></li>
-      <li class="nav__item"><a href="/about/" class="nav__link">About</a></li>
-    </ul>
-  </nav>
-</div>
+<nav class="site-nav">
+  <a href="/" class="site-nav__brand">{{ site.title | upcase }}</a>
+  <div class="site-nav__links">
+    <a href="/" class="site-nav__link{% if page.url == '/' %} is-active{% endif %}">Home</a>
+    <a href="/writing/" class="site-nav__link{% if page.url == '/writing/' or page.layout == 'post' %} is-active{% endif %}">Writing</a>
+    <a href="/projects/" class="site-nav__link{% if page.url == '/projects/' %} is-active{% endif %}">Projects</a>
+    <a href="/about/" class="site-nav__link{% if page.url == '/about/' %} is-active{% endif %}">About</a>
+    <button id="theme-toggle" class="site-nav__toggle" type="button" aria-label="Toggle color theme">Light</button>
+  </div>
+</nav>
