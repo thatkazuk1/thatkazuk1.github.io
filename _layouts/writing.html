@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section class="writing">
+  <header class="writing__header">
+    <h1>{{ page.title | escape }}</h1>
+    <p>Notes on backend systems, homelabs, and whatever I'm currently nerding out about.</p>
+  </header>
+
+  {% include now-playing.html %}
+
+  {% assign grouped = site.posts | group_by: "series" %}
+  {% for group in grouped %}
+    <div class="writing__group">
+      <div class="writing__series">{{ group.name | default: "Essays" }}</div>
+      {% for post in group.items %}
+        <a class="writing__post" href="{{ post.url | relative_url }}">
+          <h2>{{ post.title | escape }}</h2>
+          <p>{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
+          <div class="writing__post-meta">
+            <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span>&middot;</span>
+            {% assign words = post.content | number_of_words %}
+            <span>{% if words < 360 %}1 min read{% else %}{{ words | divided_by: 180 }} min read{% endif %}</span>
+            {% for tag in post.tags %}<span>&middot;</span><span class="writing__tag">#{{ tag }}</span>{% endfor %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</section>

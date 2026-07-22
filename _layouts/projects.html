@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<section class="projects">
+  <header class="projects__header">
+    <h1>{{ page.title | escape }}</h1>
+    <p>Things I've built and still maintain.</p>
+  </header>
+  {% for p in site.data.projects %}
+    <article class="projects__item">
+      <div class="projects__row">
+        <h2>{{ p.name }}</h2>
+        <span class="projects__year">{{ p.year }}</span>
+      </div>
+      <p class="projects__desc">{{ p.desc }}</p>
+      <div class="projects__footer">
+        {% for s in p.stack %}<span class="projects__stack">{{ s }}</span>{% endfor %}
+        <a href="{{ p.href }}" target="_blank" rel="noopener" class="projects__visit">Visit &rarr;</a>
+      </div>
+    </article>
+  {% endfor %}
+</section>

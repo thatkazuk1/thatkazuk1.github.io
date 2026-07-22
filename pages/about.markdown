@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hey there, I'm Desmond Edem, a Backend Engineer driven by a simple philosophy: **Learn**. **Improve**. **Contribute**. Welcome to my little corner of the internet...
-
-{% include spotify-widget.html spotify_id="7G3lxTsMfSx4yarMkfgnTC" %}
+<p class="about__intro">Hey there, I'm Desmond Edem, a Backend Engineer driven by a simple philosophy: <strong>Learn</strong>. <strong>Improve</strong>. <strong>Contribute</strong>. Welcome to my little corner of the internet...</p>
 
 For the past several years, I've been building and scaling backend systems that power modern web applications. At **[STRV](https://www.strv.com/)**, I had the privilege
 of leading the technical architecture for multiple startup projects, turning client visions into reality, with little/affordable operational costs. My focus has always
@@ -23,25 +21,22 @@ The latter of which has driven me to share these journeys. I'm excited to docume
 I believe strongly in giving back to the community. I've had the honor of mentoring developers at **DevCareer**, and tutoring for **CodeLagos**, helping others start
 their own journeys in tech.
 
+<div class="section-label">On repeat</div>
+{% include now-playing.html %}
+
 ### Get in Touch
 
 <div class="social-links">
-  <a href="https://www.linkedin.com/in/desmondedem" class="social-links__link" target="_blank" title="LinkedIn">
-    <i class="fab fa-linkedin"></i>
+  <a href="https://www.linkedin.com/in/desmondedem" class="social-links__link" target="_blank" rel="noopener" title="LinkedIn">
+    {% include icon.html name="linkedin" %}
   </a>
-  <a href="https://github.com/meetKazuki" class="social-links__link" target="_blank" title="Github">
-    <i class="fab fa-github"></i>
+  <a href="https://github.com/{{ site.github_username }}" class="social-links__link" target="_blank" rel="noopener" title="Github">
+    {% include icon.html name="github" %}
   </a>
-  <a href="https://medium.com/@desmondedem" class="social-links__link" target="_blank" title="Medium">
-    <i class="fa-brands fa-medium"></i>
+  <a href="https://medium.com/@desmondedem" class="social-links__link" target="_blank" rel="noopener" title="Medium">
+    {% include icon.html name="medium" %}
   </a>
-  <a href="mailto:meetdesmond.edem@gmail.com" class="social-links__link" title="Email">
-    <i class="fas fa-envelope"></i>
-  </a>
-</div>
-
-<div class="cv-button__container">
-  <a href="/assets/desmond_edem.pdf" class="cv-button" target="_blank">
-    <i class="fas fa-file-pdf"></i> View Full CV
+  <a href="mailto:{{ site.email }}" class="social-links__link" title="Email">
+    {% include icon.html name="email" %}
   </a>
 </div>

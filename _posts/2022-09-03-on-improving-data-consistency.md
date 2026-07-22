@@ -4,6 +4,7 @@ title: "On Improving Data Consistency — A Retrospective"
 date: 2022-09-03 16:01:01
 excerpt: "A general goal for database systems is to ensure data consistency. Consistency here means the data adheres to constraints (formal and informal).
 And if one piece of information is stored multiple times, then they all agree. But how can we ensure that? What are some things we should not do?"
+tags: [databases, mongodb, backend]
 ---
 
 {% capture banner_content %}

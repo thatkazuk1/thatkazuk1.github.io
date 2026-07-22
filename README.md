@@ -1,4 +1,4 @@
-# meetKazuki.github.io
+# thatkazuk1.github.io
 
 Repository for my personal blog.
 
@@ -26,8 +26,8 @@ TBA
 
 ## Project Status
 
-[![pages-build-deployment](https://github.com/meetKazuki/meetkazuki.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/meetKazuki/meetkazuki.github.io/actions/workflows/pages/pages-build-deployment)
-[![Website](https://img.shields.io/badge/Live%20Site-meetkazuki.github.io-2196F3?style=for-the-badge&logo=github&logoColor=white)](https://meetkazuki.github.io/)
+[![pages-build-deployment](https://github.com/thatkazuk1/thatkazuk1.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=master)](https://github.com/thatkazuk1/thatkazuk1.github.io/actions/workflows/pages/pages-build-deployment)
+[![Website](https://img.shields.io/badge/Live%20Site-kazuki.uk-2196F3?style=for-the-badge&logo=github&logoColor=white)](https://kazuki.uk/)
 
 ## Getting Started
 
@@ -59,7 +59,7 @@ TBA
 
 ## How to Get Help
 
-Notice a bug? please open an issue. Need more clarification on any part of the code base? Contact [Desmond Edem](https://github.com/meetKazuki).
+Notice a bug? please open an issue. Need more clarification on any part of the code base? Contact [Desmond Edem](https://github.com/thatkazuk1).
 
 ## Contributing
 
@@ -69,7 +69,7 @@ To contribute to this project, start by raising an issue. There are issue templa
 
 ## Authors
 
-- **[Desmond Edem](https://github.com/meetKazuki)**
+- **[Desmond Edem](https://github.com/thatkazuk1)**
 
 ### Repo Activity
 

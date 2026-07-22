@@ -1,24 +1,22 @@
 ---
 layout: default
 ---
-<article class="page">
-  <h1 class="page__title">{{ page.title | escape }}</h1>
-  <p class="post__meta">
-    {{ page.date | date: "%B %d, %Y" }}
-    {% assign words = page.content | number_of_words %}
-    &bull;
-    {% if words < 360 %}
-      1 min read
-    {% else %}
-      {{ words | divided_by:180 }} mins read
-    {% endif %}
-  </p>
+<article class="post" id="post-article">
+  <a href="/writing/" class="post__back">&larr; Writing</a>
 
-  <div class="page__content">
-    {{ content }}
+  {% if page.series %}<div class="post__series">{{ page.series }}</div>{% endif %}
+
+  <h1 class="post__title">{{ page.title | escape }}</h1>
+
+  <div class="post__meta">
+    <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+    <span>&middot;</span>
+    {% assign words = page.content | number_of_words %}
+    <span>{% if words < 360 %}1 min read{% else %}{{ words | divided_by: 180 }} min read{% endif %}</span>
+    {% for tag in page.tags %}<span>&middot;</span><span class="post__tag">#{{ tag }}</span>{% endfor %}
   </div>
 
-  <a href="/thoughts/" class="post__back-link">
-    <i class="fas fa-arrow-left"></i> Back to Thoughts
-  </a>
+  <div class="post__content">
+    {{ content }}
+  </div>
 </article>

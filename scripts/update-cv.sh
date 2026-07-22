@@ -1,7 +1,7 @@
 #!/bin/bash
 # A script that downloads the latest CV PDF release from Github and places it in `/assets` folder
 
-CV_URL="https://github.com/meetKazuki/personal-latex-moderncv/releases/download/latest/desmond_edem.pdf"
+CV_URL="https://github.com/thatkazuk1/personal-latex-moderncv/releases/download/latest/desmond_edem.pdf"
 DESTINATION_PATH="assets/desmond_edem.pdf"
 
 echo "Downloading latest CV from $CV_URL ..."

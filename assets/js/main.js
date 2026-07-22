@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const codeBlocks = document.querySelectorAll('.page-content pre');
+  const codeBlocks = document.querySelectorAll('.post__content pre');
   codeBlocks.forEach(block => {
     const button = document.createElement('button');
     button.className = 'copy-code-button';
