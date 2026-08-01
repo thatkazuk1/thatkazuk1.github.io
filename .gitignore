@@ -5,6 +5,7 @@ _site
 .org
 vendor
 
-.claude
+_adrs
 _design
+.claude
 CLAUDE.md

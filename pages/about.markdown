@@ -4,22 +4,24 @@ title: About
 permalink: /about/
 ---
 
-<p class="about__intro">Hey there, I'm Desmond Edem, a Backend Engineer driven by a simple philosophy: <strong>Learn</strong>. <strong>Improve</strong>. <strong>Contribute</strong>. Welcome to my little corner of the internet...</p>
+<p class="about__intro">I'm Desmond, a backend engineer who likes the unglamorous middle of the stack: the API contracts, the database migrations, the deployment pipelines. The parts users never see but always feel.</p>
 
-For the past several years, I've been building and scaling backend systems that power modern web applications. At **[STRV](https://www.strv.com/)**, I had the privilege
-of leading the technical architecture for multiple startup projects, turning client visions into reality, with little/affordable operational costs. My focus has always
-been on creating robust, scalable solutions that can grow from a minimum viable product to handle a **5x** increase in workload without a major overhaul.
+Most recently I was at **[STRV](https://www.strv.com/)**, where I led backend architecture for MVP projects built for US-based startups &mdash; scoping infrastructure,
+designing schemas, and shipping APIs that held up as those products scaled. Before that, at **[Pettysave](https://jetseed.com/)**, I built automation and backend
+systems that improved operational pipelines and team collaboration.
 
-Before that, at **[Pettysave](https://jetseed.com/)**, I discovered the power of automation, implementing systems that boosted customer retention, and improving pipelines
-to enhance team collaboration.
+When I'm not writing code I'm usually tinkering with my homelab, listening to way too much music, or reading about distributed systems.
 
-### Beyond the Code
+### Currently
 
-My passion for technology extends beyond my professional work. I explore other things that piques my curiosity&mdash;from *video games* to now, *homelabs* and *self-hosting*
-The latter of which has driven me to share these journeys. I'm excited to document! So, what will I write about? Answer, everything!
+<div class="section-label">Building</div>
+Infra Stackdoc &mdash; document and visualize your homelab setup.
 
-I believe strongly in giving back to the community. I've had the honor of mentoring developers at **DevCareer**, and tutoring for **CodeLagos**, helping others start
-their own journeys in tech.
+<div class="section-label">Reading</div>
+Designing Data-Intensive Applications (again).
+
+<div class="section-label">Exploring</div>
+Proxmox, Docker, and too many side projects.
 
 <div class="section-label">On repeat</div>
 {% include now-playing.html %}
@@ -33,8 +35,8 @@ their own journeys in tech.
   <a href="https://github.com/{{ site.github_username }}" class="social-links__link" target="_blank" rel="noopener" title="Github">
     {% include icon.html name="github" %}
   </a>
-  <a href="https://medium.com/@desmondedem" class="social-links__link" target="_blank" rel="noopener" title="Medium">
-    {% include icon.html name="medium" %}
+  <a href="https://x.com/{{ site.twitter_username }}" class="social-links__link" target="_blank" rel="noopener" title="X">
+    {% include icon.html name="x" %}
   </a>
   <a href="mailto:{{ site.email }}" class="social-links__link" title="Email">
     {% include icon.html name="email" %}

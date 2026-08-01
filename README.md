@@ -22,7 +22,7 @@ Repository for my personal blog.
 
 ## About the Project
 
-TBA
+Personal site and blog for Desmond Edem. Built with Jekyll on a heavily customized minima theme, hosted on GitHub Pages at [kazuki.uk](https://kazuki.uk/).
 
 ## Project Status
 
@@ -33,29 +33,44 @@ TBA
 
 ### Dependencies
 
-TBA
+- Ruby 3.1.2 (see `.ruby-version`)
+- Bundler
 
 ### Technology Stack
 
-TBA
+- [Jekyll](https://jekyllrb.com/) ~> 4.3.4, on a customized `minima` theme
+- Plain CSS/JS in `assets/` — no frontend framework or build step
+- GitHub Pages, custom domain via `CNAME` → kazuki.uk
 
 ### Third-party Services
 
-TBA
+None integrated. The "now playing" widget (`_data/nowplaying.yml`) is manually edited, not pulled from a live API.
 
 ## Installation & Development
 
 ### Setting Up
 
-TBA
+```bash
+bundle install
+```
 
 ### Development
 
-TBA
+```bash
+make develop # bundle exec jekyll serve --livereload
+```
+
+Site available at `http://localhost:4000`.
+
+To refresh the hosted CV from the latest `personal-latex-moderncv` release:
+
+```bash
+make update-portfolio-cv # ./scripts/update-cv.sh
+```
 
 ### Testing
 
-TBA
+None currently. No test framework or CI checks beyond the GitHub Pages build.
 
 ## How to Get Help
 
@@ -63,7 +78,8 @@ Notice a bug? please open an issue. Need more clarification on any part of the c
 
 ## Contributing
 
-To contribute to this project, start by raising an issue. There are issue templates for bug and feature request. Once this issue has been agreed upon, you can create a feature or hotfix branch off develop or master (for hotfix) and raise PR. There is also a PR template.
+To contribute to this project, start by raising an issue. There are issue templates for bug and feature request. Once this issue has been agreed upon, you can
+create a feature or hotfix branch off develop or master (for hotfix) and raise PR. There is also a PR template.
 
 **[Back to top](#table-of-contents)**
 
@@ -73,4 +89,4 @@ To contribute to this project, start by raising an issue. There are issue templa
 
 ### Repo Activity
 
-TBA
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/thatkazuk1/thatkazuk1.github.io)](https://github.com/thatkazuk1/thatkazuk1.github.io/commits/master)

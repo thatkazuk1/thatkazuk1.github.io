@@ -1,9 +1,9 @@
 title: Desmond Edem
 email: tech@kazuki.uk
 description: >-
-  Software Engineering, Homelab/Self-hosting, Gaming. Join me as I explore/document this journey...
+  Software engineer building backend systems, developer tools, and homelab infrastructure.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://thatkazuk1.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kazuki.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: thatkazuki
 github_username:  thatkazuk1
 
