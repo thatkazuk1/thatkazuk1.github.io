@@ -42,5 +42,3 @@ Proxmox, Docker, and too many side projects.
     {% include icon.html name="email" %}
   </a>
 </div>
-
-[View Full CV](/assets/desmond_edem.pdf)

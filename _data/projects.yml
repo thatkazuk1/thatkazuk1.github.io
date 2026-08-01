@@ -1,7 +1,7 @@
 - name: Infra Stackdoc
   year: "2026 — now"
   desc: "Document, visualize, and share your homelab stack. Built because I kept rebuilding my setup without proper documentation."
-  stack: [TypeScript, React.js]
+  stack: [TypeScript, Node.js, React.js]
   href: "https://github.com/thatkazuk1/infra-stackdoc"
 
 # TODO: Add 2-3 more projects here. Each needs: name, year, a 1-2 sentence
