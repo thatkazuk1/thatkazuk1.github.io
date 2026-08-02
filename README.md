@@ -62,11 +62,9 @@ make develop # bundle exec jekyll serve --livereload
 
 Site available at `http://localhost:4000`.
 
-To refresh the hosted CV from the latest `personal-latex-moderncv` release:
-
-```bash
-make update-portfolio-cv # ./scripts/update-cv.sh
-```
+The CV link on the home page (`{{ site.cv_url }}` in `_config.yml`) points directly at the
+`personal-latex-moderncv` repo's `latest` release asset, so it always serves the current PDF
+with no local copy to keep in sync.
 
 ### Testing
 

@@ -9,6 +9,3 @@ build:
 
 clean:
 	rm -rf _site .jekyll-cache .sass-cache
-
-update-portfolio-cv:
-	./scripts/update-cv.sh

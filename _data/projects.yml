@@ -4,5 +4,11 @@
   stack: [TypeScript, Node.js, React.js]
   href: "https://github.com/thatkazuk1/infra-stackdoc"
 
-# TODO: Add 2-3 more projects here. Each needs: name, year, a 1-2 sentence
+- name: personal-latex-moderncv
+  year: "2018 — now"
+  desc: "Kept hand-editing one CV for every role type and losing track of which version was current. Compiles three role-targeted PDFs from a single LaTeX source and ships them via GitHub Actions."
+  stack: [LaTeX, GNU Make, GitHub Actions]
+  href: "https://github.com/thatkazuk1/personal-latex-moderncv"
+
+# TODO: Add 1-2 more projects here. Each needs: name, year, a 1-2 sentence
 # description (problem framed, not feature listed), stack, and href.
