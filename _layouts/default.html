@@ -13,6 +13,10 @@
   <script src="/assets/js/theme.js"></script>
   <script src="/assets/js/main.js"></script>
 
+  {% if page.layout == 'writing' or page.layout == 'page' %}
+  <script src="/assets/js/now-playing.js" defer></script>
+  {% endif %}
+
   {% if page.layout == 'post' %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>

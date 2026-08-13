@@ -32,6 +32,12 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# scripts/ is dev-only tooling (e.g. the local now-playing fixture server) —
+# unlike _-prefixed directories, it isn't excluded by Jekyll by default and
+# must not ship in the built site.
+exclude:
+  - scripts/
+
 sass:
   quiet_deps: true
 
@@ -40,3 +46,6 @@ kramdown:
     disable: true
 
 cv_url: "https://github.com/thatkazuk1/personal-latex-moderncv/releases/download/latest/desmond_edem.pdf"
+
+now_playing:
+  endpoint: "https://status.kazuki.uk/now-playing"

@@ -1,0 +1,11 @@
+# Local-only overrides, layered on top of _config.yml for development.
+# Not used in the production build — never referenced by CI/GitHub Pages.
+#
+# Usage: bundle exec jekyll serve --livereload --config _config.yml,_config_dev.yml
+# (or `make develop-dev`)
+#
+# The production now-playing endpoint only sends CORS headers for
+# https://kazuki.uk, so it can't be fetched from localhost. Point at a local
+# fixture server instead — see scripts/serve-fixture.py (or `make fixture`).
+now_playing:
+  endpoint: "http://127.0.0.1:8899/now-playing.fixture.json"
