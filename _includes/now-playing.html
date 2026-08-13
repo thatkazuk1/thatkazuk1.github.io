@@ -1,16 +1,14 @@
-{% assign np = site.data.nowplaying %}
-<div class="now-playing">
-  <div class="now-playing__art" aria-hidden="true">album<br>art</div>
+<div class="now-playing" data-endpoint="{{ site.now_playing.endpoint }}" hidden>
+  <div class="now-playing__art" aria-hidden="true" data-now-playing-art></div>
   <div class="now-playing__info">
-    <div class="now-playing__label">I'm currently listening to</div>
-    <div class="now-playing__title">{{ np.title }}</div>
-    <div class="now-playing__source">{{ np.source }} · {{ np.platform }}</div>
+    <div class="now-playing__label" data-now-playing-label>I'm currently listening to</div>
+    <div class="now-playing__title" data-now-playing-title></div>
+    <div class="now-playing__source" data-now-playing-source></div>
   </div>
   <div class="now-playing__side">
-    <div class="now-playing__eq" aria-hidden="true">
+    <div class="now-playing__eq" aria-hidden="true" data-now-playing-eq>
       <span></span><span></span><span></span><span></span>
     </div>
-    <a href="{{ np.yt_url }}" title="YouTube Music" class="now-playing__btn">{% include icon.html name="youtube" dim=16 %}</a>
-    <a href="{{ np.spotify_url }}" title="Spotify" class="now-playing__btn">{% include icon.html name="spotify" dim=16 %}</a>
+    <a href="#" class="now-playing__link" data-now-playing-link>Last.fm &rarr;</a>
   </div>
 </div>

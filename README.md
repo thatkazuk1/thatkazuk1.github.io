@@ -44,7 +44,11 @@ Personal site and blog for Desmond Edem. Built with Jekyll on a heavily customiz
 
 ### Third-party Services
 
-None integrated. The "now playing" widget (`_data/nowplaying.yml`) is manually edited, not pulled from a live API.
+- **Now playing widget** — `assets/js/now-playing.js` polls a personal status API
+  (`status.kazuki.uk/now-playing`, set via `now_playing.endpoint` in `_config.yml`) for
+  currently-playing/last-played track data sourced from Last.fm. That endpoint's CORS is
+  scoped to `https://kazuki.uk`, so it won't respond to `localhost` — see
+  [Development](#development) for the local fixture workflow.
 
 ## Installation & Development
 
@@ -65,6 +69,19 @@ Site available at `http://localhost:4000`.
 The CV link on the home page (`{{ site.cv_url }}` in `_config.yml`) points directly at the
 `personal-latex-moderncv` repo's `latest` release asset, so it always serves the current PDF
 with no local copy to keep in sync.
+
+**Now playing widget** — since the production endpoint's CORS won't allow `localhost`, test it
+against a local fixture instead, in two terminals:
+
+```bash
+make fixture      # serves scripts/fixtures/now-playing.fixture.json on :8899, CORS enabled
+make develop-dev  # jekyll serve with _config_dev.yml layered on top, pointing at the fixture
+```
+
+Edit `scripts/fixtures/now-playing.fixture.json` and refresh to try different states
+(`isPlaying: true/false`, missing `artUrl`/`trackUrl`, etc.), or stop `make fixture` to see the
+widget's hidden/no-data state. `_config_dev.yml` and `scripts/` are dev-only — excluded from the
+built site and never touched by the production config.
 
 ### Testing
 
