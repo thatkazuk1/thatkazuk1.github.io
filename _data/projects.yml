@@ -1,3 +1,9 @@
+- name: Fukushima
+  year: "2026 — now"
+  desc: "A dynamic-island Quickshell shell for Hyprland — one morphing pill per monitor, every surface grown from the pill itself."
+  stack: [Shell-Scripting, QML, JavaScript, Quickshell, Hyprland]
+  href: "https://github.com/thatkazuk1/fukushima"
+
 - name: Infra Stackdoc
   year: "2026 — now"
   desc: "Document, visualize, and share your homelab stack. Built because I kept rebuilding my setup without proper documentation."
@@ -10,5 +16,3 @@
   stack: [LaTeX, GNU Make, GitHub Actions]
   href: "https://github.com/thatkazuk1/personal-latex-moderncv"
 
-# TODO: Add 1-2 more projects here. Each needs: name, year, a 1-2 sentence
-# description (problem framed, not feature listed), stack, and href.
