@@ -1,18 +1,92 @@
 - name: Fukushima
+  start: "2026-08"
+  status: active
   year: "2026 — now"
   desc: "A dynamic-island Quickshell shell for Hyprland — one morphing pill per monitor, every surface grown from the pill itself."
   stack: [Shell-Scripting, QML, JavaScript, Quickshell, Hyprland]
   href: "https://github.com/thatkazuk1/fukushima"
 
-- name: Infra Stackdoc
+- name: Oriweave
+  start: "2026-03"
+  status: active
   year: "2026 — now"
-  desc: "Document, visualize, and share your homelab stack. Built because I kept rebuilding my setup without proper documentation."
-  stack: [TypeScript, Node.js, React.js]
-  href: "https://github.com/thatkazuk1/infra-stackdoc"
+  desc: "Document your homelab as YAML, render it as a live topology. Built because I kept rebuilding my setup without proper documentation. Live at oriweave.dev."
+  stack: [TypeScript, NestJS, React.js, PostgreSQL]
+  href: "https://oriweave.dev"
 
 - name: personal-latex-moderncv
+  start: "2018-08"
+  status: active
   year: "2018 — now"
   desc: "Kept hand-editing one CV for every role type and losing track of which version was current. Compiles three role-targeted PDFs from a single LaTeX source and ships them via GitHub Actions."
   stack: [LaTeX, GNU Make, GitHub Actions]
   href: "https://github.com/thatkazuk1/personal-latex-moderncv"
 
+- name: Bonder
+  start: "2024-03"
+  status: completed
+  org: STRV
+  year: "2024"
+  desc: "Backend for an encrypted, ad-free social platform built around private communities and live commerce. Paid circles, live-stream chat rooms on AWS IVS, and the CDK stack that tracks IVS state changes."
+  stack: [Node.js, TypeScript, AWS CDK, IVS, Firebase]
+  href: "https://bonder.me/"
+
+- name: Roeme
+  start: "2023-12"
+  status: completed
+  org: STRV
+  year: "2023 — 2024"
+  desc: "Social features for a community app: post comments, reactions, an activity center, unread counts, and device-token push notifications."
+  stack: [Node.js, TypeScript, PostgreSQL, FCM]
+
+- name: Pickford's List
+  start: "2023-10"
+  status: completed
+  org: STRV
+  year: "2023 — 2024"
+  desc: "GraphQL API behind a consumer web platform, from tag management to release automation and promotion across dev, staging, and production."
+  stack: [TypeScript, GraphQL, Koa, PostgreSQL]
+
+- name: XX Aviation
+  start: "2023-02"
+  status: completed
+  org: STRV
+  year: "2023"
+  desc: "Backend for an in-flight service and cabin crew management app: API, queues, and cron jobs, plus the notification service, staging environment, and user activity infrastructure."
+  stack: [Node.js, TypeScript, Redis, FCM]
+  href: "https://www.xxaviation.com/enter"
+
+- name: Zooni
+  start: "2021-09"
+  status: completed
+  org: STRV
+  year: "2021 — 2022"
+  desc: "Backend for a short-video social app: follows and follow requests, comments, trending hashtags, a tunable recommendation engine, push notifications, and Sentry error monitoring."
+  stack: [Node.js, TypeScript, MongoDB]
+  href: "https://zooni.app"
+
+- name: Subset
+  start: "2021-04"
+  status: completed
+  org: STRV
+  year: "2021"
+  desc: "Backend for a shared-subscriptions app: plans, members and invitations, recurring payments with retry handling, and push notifications."
+  stack: [Node.js, TypeScript, Koa, PostgreSQL]
+
+- name: Jetseed (formerly Pettysave)
+  start: "2020-07"
+  status: completed
+  org: Pettysave
+  year: "2020 — 2021"
+  desc: "Backend for a savings and investment platform: transaction processing, account management, in-app rewards, and automated email sequences that lifted customer retention by 27%. Also set up preview deployments on every pull request."
+  stack: [Node.js, Adonis.js, GraphQL, MySQL, SendGrid]
+  href: "https://jetseed.com/"
+
+- name: NesterVerify
+  start: "2020-01"
+  status: completed
+  org: Nester
+  year: "2020"
+  desc: "Features and maintenance on a KYC and identity verification platform for the Nigerian market, plus code reviews and Azure deployments."
+  stack: [Node.js, Vue.js, MongoDB, Azure]
+  href: "https://nesterverify.com/"

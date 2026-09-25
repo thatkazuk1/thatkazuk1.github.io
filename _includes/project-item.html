@@ -1,0 +1,11 @@
+<li class="timeline__item timeline__item--{{ include.p.status | default: 'completed' }}">
+  <div class="timeline__when">
+    {{ include.p.year }}{% if include.p.org %} &middot; {{ include.p.org }}{% endif %}
+    {% if include.p.status == 'active' %}<span class="timeline__status">Active</span>{% endif %}
+  </div>
+  <div class="timeline__what">
+    <h2 class="timeline__title">{% if include.p.href %}<a href="{{ include.p.href }}" target="_blank" rel="noopener">{{ include.p.name }}</a>{% else %}{{ include.p.name }}{% endif %}</h2>
+    {{ include.p.desc }}
+    <span class="timeline__stack">{{ include.p.stack | join: ", " }}</span>
+  </div>
+</li>
