@@ -1,10 +1,11 @@
-<nav class="site-nav">
-  <a href="/" class="site-nav__brand">{{ site.title | upcase }}</a>
-  <div class="site-nav__links">
-    <a href="/" class="site-nav__link{% if page.url == '/' %} is-active{% endif %}">Home</a>
-    <a href="/writing/" class="site-nav__link{% if page.url == '/writing/' or page.layout == 'post' %} is-active{% endif %}">Writing</a>
-    <a href="/projects/" class="site-nav__link{% if page.url == '/projects/' %} is-active{% endif %}">Projects</a>
-    <a href="/about/" class="site-nav__link{% if page.url == '/about/' %} is-active{% endif %}">About</a>
-    <button id="theme-toggle" class="site-nav__toggle" type="button" aria-label="Toggle color theme">Light</button>
-  </div>
-</nav>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main">
+    <a href="/" class="site-nav__brand"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.title }}</a>
+    <ul class="site-nav__links">
+      <li><a href="/writing/" class="site-nav__link"{% if page.url == '/writing/' %} aria-current="page"{% elsif page.layout == 'post' %} aria-current="true"{% endif %}>Writing</a></li>
+      <li><a href="/projects/" class="site-nav__link"{% if page.url == '/projects/' %} aria-current="page"{% endif %}>Projects</a></li>
+      <li><a href="/about/" class="site-nav__link"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
+      <li><button id="theme-toggle" class="site-nav__link site-nav__toggle" type="button" aria-label="Switch to light theme">Light</button></li>
+    </ul>
+  </nav>
+</header>

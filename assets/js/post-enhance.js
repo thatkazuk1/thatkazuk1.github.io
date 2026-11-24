@@ -48,7 +48,7 @@
         startOnLoad: false,
         theme: theme === 'dark' ? 'dark' : 'neutral',
         securityLevel: 'loose',
-        themeVariables: { fontFamily: 'JetBrains Mono, monospace', fontSize: '13px' }
+        themeVariables: { fontFamily: 'IBM Plex Sans, sans-serif', fontSize: '13px' }
       });
       mermaidBlocks.forEach(function (div) {
         div.textContent = div.getAttribute('data-mermaid-src');
