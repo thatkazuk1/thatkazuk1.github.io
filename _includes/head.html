@@ -25,8 +25,13 @@
 
 <script>
 (function(){
-  var t = 'dark';
-  try { t = localStorage.getItem('portfolio-theme') || 'dark'; } catch (e) {}
-  document.documentElement.setAttribute('data-theme', t);
+  var preference = 'system';
+  try { preference = localStorage.getItem('portfolio-theme') || 'system'; } catch (e) {}
+  if (preference !== 'light' && preference !== 'dark') preference = 'system';
+  var theme = preference === 'system'
+    ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    : preference;
+  document.documentElement.setAttribute('data-theme-pref', preference);
+  document.documentElement.setAttribute('data-theme', theme);
 })();
 </script>

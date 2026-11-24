@@ -219,8 +219,10 @@ button:focus-visible {
   height: 18px;
 }
 
-:root[data-theme="dark"] .site-nav__toggle-sun,
-:root[data-theme="light"] .site-nav__toggle-moon {
+:root:not([data-theme-pref]) .site-nav__toggle-monitor,
+:root[data-theme-pref="system"] .site-nav__toggle-monitor,
+:root[data-theme-pref="light"] .site-nav__toggle-sun,
+:root[data-theme-pref="dark"] .site-nav__toggle-moon {
   display: block;
 }
 

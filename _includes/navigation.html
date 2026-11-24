@@ -6,7 +6,11 @@
       <li><a href="/projects/" class="site-nav__link"{% if page.url == '/projects/' %} aria-current="page"{% endif %}>Projects</a></li>
       <li><a href="/about/" class="site-nav__link"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
       <li>
-        <button id="theme-toggle" class="site-nav__toggle" type="button" aria-label="Switch to light theme">
+        <button id="theme-toggle" class="site-nav__toggle" type="button" aria-label="Theme: system. Switch to light." title="Theme: system. Switch to light.">
+          <svg class="site-nav__toggle-monitor" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="13" rx="2" />
+            <path d="M12 16v5m-4 0h8" />
+          </svg>
           <svg class="site-nav__toggle-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="12" cy="12" r="4" />
             <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
