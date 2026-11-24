@@ -325,17 +325,40 @@ body.layout-home .home__tagline {
 }
 
 .home__links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 8px 0;
   color: var(--text);
   text-decoration: underline;
   text-decoration-color: var(--line);
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
+  transition: color 150ms;
 }
 
-.home__links a:hover {
+.home__links a > svg {
+  flex-shrink: 0;
+  color: var(--dim);
+  transition: color 150ms;
+}
+
+.home__links a:hover,
+.home__links a:focus {
+  color: var(--text);
   text-decoration-color: var(--text);
+}
+
+.home__links a:hover > svg,
+.home__links a:focus > svg {
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home__links a,
+  .home__links a > svg {
+    transition: none;
+  }
 }
 
 /* --- Now playing card --- */
