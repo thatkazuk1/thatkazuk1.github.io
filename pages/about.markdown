@@ -33,9 +33,6 @@ Proxmox, Docker, and too many side projects.
   <a href="https://github.com/{{ site.github_username }}" class="social-links__link" target="_blank" rel="noopener" title="Github">
     {% include icon.html name="github" %}
   </a>
-  <a href="https://x.com/{{ site.twitter_username }}" class="social-links__link" target="_blank" rel="noopener" title="X">
-    {% include icon.html name="x" %}
-  </a>
   <a href="mailto:{{ site.email }}" class="social-links__link" title="Email">
     {% include icon.html name="email" %}
   </a>

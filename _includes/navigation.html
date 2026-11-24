@@ -1,10 +1,25 @@
-<nav class="site-nav">
-  <a href="/" class="site-nav__brand">{{ site.title | upcase }}</a>
-  <div class="site-nav__links">
-    <a href="/" class="site-nav__link{% if page.url == '/' %} is-active{% endif %}">Home</a>
-    <a href="/writing/" class="site-nav__link{% if page.url == '/writing/' or page.layout == 'post' %} is-active{% endif %}">Writing</a>
-    <a href="/projects/" class="site-nav__link{% if page.url == '/projects/' %} is-active{% endif %}">Projects</a>
-    <a href="/about/" class="site-nav__link{% if page.url == '/about/' %} is-active{% endif %}">About</a>
-    <button id="theme-toggle" class="site-nav__toggle" type="button" aria-label="Toggle color theme">Light</button>
-  </div>
-</nav>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main">
+    <a href="/" class="site-nav__brand"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.title }}</a>
+    <ul class="site-nav__links">
+      <li><a href="/writing/" class="site-nav__link"{% if page.url == '/writing/' %} aria-current="page"{% elsif page.layout == 'post' %} aria-current="true"{% endif %}>Writing</a></li>
+      <li><a href="/projects/" class="site-nav__link"{% if page.url == '/projects/' %} aria-current="page"{% endif %}>Projects</a></li>
+      <li><a href="/about/" class="site-nav__link"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a></li>
+      <li>
+        <button id="theme-toggle" class="site-nav__toggle" type="button" aria-label="Theme: system. Switch to light." title="Theme: system. Switch to light.">
+          <svg class="site-nav__toggle-monitor" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="13" rx="2" />
+            <path d="M12 16v5m-4 0h8" />
+          </svg>
+          <svg class="site-nav__toggle-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+          </svg>
+          <svg class="site-nav__toggle-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z" />
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>

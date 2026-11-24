@@ -3,10 +3,10 @@
 <head>
   {% include head.html %}
 </head>
-<body>
+<body class="layout-{{ page.layout | default: 'default' }}">
   {% include navigation.html %}
 
-  <main{% if page.layout == 'home' %} class="main--center"{% endif %}>{{ content }}</main>
+  <main>{{ content }}</main>
 
   {% include footer.html %}
 

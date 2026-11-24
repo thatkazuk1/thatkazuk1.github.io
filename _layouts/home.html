@@ -2,17 +2,12 @@
 layout: default
 ---
 <section class="home">
-  <h1 class="home__wordmark">Desmond<br>Edem</h1>
-  <div class="home__tagline">Software Engineer</div>
-  <div class="home__links">
-    <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub</a>
-    <span class="dot">&middot;</span>
-    <a href="https://www.linkedin.com/in/desmondedem" target="_blank" rel="noopener">LinkedIn</a>
-    <span class="dot">&middot;</span>
-    <a href="https://x.com/{{ site.twitter_username }}" target="_blank" rel="noopener">X</a>
-    <span class="dot">&middot;</span>
-    <a href="mailto:{{ site.email }}">Email</a>
-    <span class="dot">&middot;</span>
-    <a href="{{ site.cv_url }}" target="_blank" rel="noopener">CV</a>
-  </div>
+  <h1 class="home__name">Desmond Edem</h1>
+  <p class="home__tagline">Software Engineer</p>
+  <ul class="home__links">
+    <li><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">{% include icon.html name="github" dim=20 %}GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/desmondedem" target="_blank" rel="noopener">{% include icon.html name="linkedin" dim=20 %}LinkedIn</a></li>
+    <li><a href="mailto:{{ site.email }}">{% include icon.html name="email" dim=20 %}Email</a></li>
+    <li><a href="{{ site.cv_url }}" target="_blank" rel="noopener">{% include icon.html name="cv" dim=20 %}CV</a></li>
+  </ul>
 </section>

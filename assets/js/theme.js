@@ -1,23 +1,43 @@
 (function () {
   var root = document.documentElement;
   var toggle = document.getElementById('theme-toggle');
-  if (!toggle) return;
+  var systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+  var preference = root.getAttribute('data-theme-pref');
+  if (preference !== 'light' && preference !== 'dark') preference = 'system';
 
-  function labelFor(theme) {
-    return theme === 'dark' ? 'Light' : 'Dark';
+  function nextPreference() {
+    return preference === 'system' ? 'light' : preference === 'light' ? 'dark' : 'system';
   }
 
-  function setTheme(theme) {
+  function applyTheme() {
+    var theme = preference === 'system' ? (systemTheme.matches ? 'dark' : 'light') : preference;
+    root.setAttribute('data-theme-pref', preference);
     root.setAttribute('data-theme', theme);
-    toggle.textContent = labelFor(theme);
-    try { localStorage.setItem('portfolio-theme', theme); } catch (e) {}
+    if (toggle) {
+      var label = 'Theme: ' + preference + '. Switch to ' + nextPreference() + '.';
+      toggle.setAttribute('aria-label', label);
+      toggle.setAttribute('title', label);
+    }
     document.dispatchEvent(new CustomEvent('themechange', { detail: { theme: theme } }));
   }
 
-  toggle.textContent = labelFor(root.getAttribute('data-theme') || 'dark');
+  function updateSystemTheme() {
+    if (preference === 'system') applyTheme();
+  }
 
-  toggle.addEventListener('click', function () {
-    var current = root.getAttribute('data-theme') || 'dark';
-    setTheme(current === 'dark' ? 'light' : 'dark');
-  });
+  if (systemTheme.addEventListener) {
+    systemTheme.addEventListener('change', updateSystemTheme);
+  } else {
+    systemTheme.addListener(updateSystemTheme);
+  }
+
+  applyTheme();
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      preference = nextPreference();
+      try { localStorage.setItem('portfolio-theme', preference); } catch (e) {}
+      applyTheme();
+    });
+  }
 })();
