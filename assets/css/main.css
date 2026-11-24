@@ -17,7 +17,7 @@
   --panel: #151517;
   --text: #ededed;
   --dim: #a1a1a7;
-  --faint: #7e7e84;
+  --faint: #808080;
   --line: rgba(255, 255, 255, 0.1);
   --line2: rgba(255, 255, 255, 0.06);
   --accent: #d9a05b;
@@ -29,7 +29,7 @@
   --panel: #ffffff;
   --text: #1b1a18;
   --dim: #504f48;
-  --faint: #6d6c63;
+  --faint: #6b6b6b;
   --line: rgba(0, 0, 0, 0.13);
   --line2: rgba(0, 0, 0, 0.06);
   --accent: #9a5b13;
@@ -53,6 +53,11 @@ body.layout-post { --col: 780px; }
 
 * {
   box-sizing: border-box;
+}
+
+/* Keep space for the scroll bar on short and long pages. */
+html {
+  overflow-y: scroll;
 }
 
 html,
