@@ -3,16 +3,10 @@
   var toggle = document.getElementById('theme-toggle');
   if (!toggle) return;
 
-  function labelFor(theme) {
-    return theme === 'dark' ? 'Light' : 'Dark';
-  }
-
-  // The visible text names the theme that a click selects.
-  // The aria-label contains the visible text, so voice control can find it.
+  // The label names the theme that a click selects.
   function updateToggle(theme) {
-    var next = labelFor(theme);
-    toggle.textContent = next;
-    toggle.setAttribute('aria-label', 'Switch to ' + next.toLowerCase() + ' theme');
+    var next = theme === 'dark' ? 'light' : 'dark';
+    toggle.setAttribute('aria-label', 'Switch to ' + next + ' theme');
   }
 
   function setTheme(theme) {
