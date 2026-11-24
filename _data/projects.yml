@@ -1,3 +1,11 @@
+- name: PatchLoom
+  start: "2026-10"
+  status: active
+  year: "2026 — now"
+  desc: "A browser game that teaches networking fundamentals on a small virtual rack. Built because running a homelab showed gaps in my own networking basics. Build a network, predict a failure, break it safely, then diagnose and repair it."
+  stack: [TypeScript, React.js, Vite, Graphlib, Playwright]
+  href: "https://patchloom.kazuki.uk"
+
 - name: Fukushima
   start: "2026-08"
   status: active
