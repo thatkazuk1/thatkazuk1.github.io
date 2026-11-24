@@ -228,6 +228,27 @@ button:focus-visible {
   padding: clamp(56px, 12vh, 120px) var(--gutter) 80px;
 }
 
+body.layout-home > main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body.layout-home .home {
+  flex-shrink: 0;
+  padding-block: 32px;
+  text-align: center;
+}
+
+body.layout-home .home > * {
+  margin-inline: auto;
+}
+
+body.layout-home .home__links {
+  justify-content: center;
+}
+
 .home__name {
   font-size: clamp(40px, 5vw, 46px);
   line-height: 1.1;
